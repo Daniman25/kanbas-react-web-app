@@ -1,0 +1,10 @@
+.wd-kanbas-navigator{
+    background-color: black;
+    color: white;
+    padding: 0px;
+    width: 80px;
+}
+
+.wd-kanbas-navigator li{
+    list-style-type: none
+}

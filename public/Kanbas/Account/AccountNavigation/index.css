@@ -1,0 +1,23 @@
+.wd-account-navigator{
+    background-color: white;
+    color: white;
+    width: 200px;
+}
+
+.wd-account-navigator li{
+    background-color: white;
+    text-align: left;
+    inline-size: 150px;
+    word-wrap: normal;
+}
+
+.wd-account-navigator a{
+    text-decoration: none;
+    color: red;
+}
+
+.wd-account-navigator li :active{
+    color: black;
+    text-align: left;
+    
+}

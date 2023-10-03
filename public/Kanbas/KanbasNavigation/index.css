@@ -1,10 +1,30 @@
 .wd-kanbas-navigator{
     background-color: black;
     color: white;
-    padding: 0px;
-    width: 80px;
+    width: 85px;
 }
 
 .wd-kanbas-navigator li{
-    list-style-type: none
+    background-color: black;
+    list-style-type: none;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+    /* line-height: 1.5; */
+}
+
+.wd-kanbas-navigator i{
+    color: red;
+}
+
+.wd-kanbas-navigator .account{
+    color: white;
+}
+
+.wd-kanbas-navigator a :active{
+    background-color: white;
+    color: red;
+    border-left: 4px black;
 }

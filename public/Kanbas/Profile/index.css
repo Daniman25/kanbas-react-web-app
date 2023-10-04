@@ -1,3 +1,70 @@
+.wd-account-navigator{
+    background-color: white;
+    color: white;
+    width: 200px;
+}
+
+.wd-account-navigator li{
+    background-color: white;
+    text-align: left;
+    inline-size: 150px;
+    word-wrap: normal;
+    padding-bottom: 15px;
+}
+
+.wd-account-navigator a{
+    color: red;
+}
+
+.wd-account-navigator li :active{
+    color: black;
+    border-left: solid black;
+    padding-left: 8px;
+    
+}
+
+.wd-kanbas-navigator{
+    background-color: black;
+    color: white;
+    width: 85px;
+    border-radius: 0px;
+    margin-right: 20px;
+}
+
+.wd-kanbas-navigator li{
+    background-color: black;
+    list-style-type: none;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+    /* line-height: 1.5; */
+}
+
+.wd-kanbas-navigator i{
+    color: red;
+}
+
+.wd-kanbas-navigator .account{
+    color: white;
+}
+
+.wd-kanbas-navigator a{
+    color: white;
+}
+
+.wd-kanbas-navigator :active{
+    background-color: white;
+    color: red;
+    border-left: 4px black;
+}
+
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+  
 a {
     text-decoration: none;
 }

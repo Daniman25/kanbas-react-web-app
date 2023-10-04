@@ -2,6 +2,8 @@
     background-color: black;
     color: white;
     width: 85px;
+    border-radius: 0px;
+    margin-right: 20px;
 }
 
 .wd-kanbas-navigator li{
@@ -10,7 +12,7 @@
     font-size: 14px;
     text-align: center;
     box-sizing: border-box;
-    margin: 5px;
+    /* margin: 5px; */
     padding: 5px;
     /* line-height: 1.5; */
 }
@@ -23,7 +25,12 @@
     color: white;
 }
 
-.wd-kanbas-navigator a :active{
+.wd-kanbas-navigator a{
+    text-decoration: none;
+    color: white;
+}
+
+.wd-kanbas-navigator :active{
     background-color: white;
     color: red;
     border-left: 4px black;

@@ -1,10 +1,10 @@
-.wd-account-navigator{
+.wd-course-navigator{
     background-color: white;
     color: white;
     width: 200px;
 }
 
-.wd-account-navigator li{
+.wd-course-navigator li{
     background-color: white;
     text-align: left;
     inline-size: 150px;
@@ -12,13 +12,19 @@
     padding-bottom: 15px;
 }
 
-.wd-account-navigator a{
+.wd-course-navigator a{
     text-decoration: none;
     color: red;
 }
 
-.wd-account-navigator li :active{
+.wd-course-navigator li :active{
     color: black;
     border-left: solid black;
     padding-left: 8px;
+}
+
+.list-group-item {
+    list-style: none;
+    border: none;
+    margin: none;
 }

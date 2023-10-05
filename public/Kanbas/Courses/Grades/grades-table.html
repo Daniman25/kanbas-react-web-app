@@ -1,33 +1,47 @@
 
-<select>
-    <option>Gradebook 1</option>
-    <option>Gradebook 2</option>
-    <option>Gradebook 3</option>
-</select>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+    <link href="../../../Kanbas/KanbasNavigation/index.css" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
+</head>
 
-<button>Import</button>
+<button class="btn btn-light">
+    <i class="fa fa-file-import"></i>
+    Import
+</button>
 
-<select>
-    <option>Export 1</option>
-    <option>Export 2</option>
-    <option>Export 3</option>
-</select>
+<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fa fa-file-export"></i>
+    Export
+</button>
 
-<button>Configure</button>
+<button class="btn btn-light">
+    <i class="fa fa-screwdriver"></i>
+</button>
 
+<div class="d-flex flex-column">
+    <div class="d-flex flex-row">
+        <h3>Student Names</h3>
+            
+        <h3>Assignment Names</h3>
+    </div>
 
-<h3>Student Names</h3>
-<input placeholder="Search Students"/>
+    <div class="d-flex flex-row">
+        <input placeholder="Search Students"/>
 
-<h3>Assignment Names</h3>
-<input placeholder="Search Students"/></br>
+        <input placeholder="Search Students"/></br>
+    </div>
+</div>
 
-<button>Apply Filters</button>
+<button class="btn btn-light">
+    <i class="fa fa-filter"></i>
+    Apply Filters
+</button>
 
-
-<table border="1" width="100%">
+<table class="table">
     <thead>
-        <tr>
+        <tr class="table-secondary">
             <th>Student Name</th>
             <th>A1 - HTML</th>
             <th>A2 - CSS</th>
@@ -38,8 +52,8 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>Mike Jones</td>
+        <tr class="table-light">
+            <td><a href="/public/Kanbas/Profile/index.html">Mike Jones</a></td>
             <td>100</td>
             <td>78</td>
             <td>79</td>
@@ -49,8 +63,8 @@
             <td>49</td>
             <td>100</td>
         </tr>
-        <tr>
-            <td>Joann Smalls</td>
+        <tr class="table-secondary">
+            <td><a href="/public/Kanbas/Profile/index.html">Joann Smalls</a></td>
             <td>100</td>
             <td>78</td>
             <td>79</td>
@@ -60,8 +74,8 @@
             <td>49</td>
             <td>100</td>
         </tr>
-        <tr>
-            <td>Samantha Basket</td>
+        <tr class="table-light">
+            <td><a href="/public/Kanbas/Profile/index.html">Samantha Basket</a></td>
             <td>100</td>
             <td>78</td>
             <td>79</td>
@@ -69,8 +83,8 @@
             <td>49</td>
             <td>100</td>
         </tr>
-        <tr>
-            <td>Bartholomew Douglas</td>
+        <tr class="table-secondary">
+            <td><a href="/public/Kanbas/Profile/index.html">Bartholomew Douglas</a></td>
             <td>100</td>
             <td>78</td>
             <td>

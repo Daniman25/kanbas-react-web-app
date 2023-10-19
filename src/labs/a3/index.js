@@ -12,6 +12,8 @@ import Destructing from "./Destructing.js";
 import FunctionDestructing from "./FunctionDestructing.js";
 import PathParameters from "./PathParameters.js";
 import DynamicStyling from "./DynamicStyling.js";
+import ConditionalOutput from "./ConditionalOutput/index.js";
+import TodoList from "./todos/TodoList.js";
 
 
 
@@ -38,6 +40,9 @@ function Assignment3() {
       <PathParameters/>
 
       <DynamicStyling />
+      <ConditionalOutput />
+
+      <TodoList />
 
 
 

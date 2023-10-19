@@ -1,0 +1,13 @@
+[
+    {
+        "course" : "RS101",
+        "name": "Week 1",
+        "description": "Basics of Rocket Science"
+    },
+    { 
+        "course" : "RS101",
+        "name": "Week 2",
+        "description": "Build a Rocket From Scratch"
+    }
+]
+    

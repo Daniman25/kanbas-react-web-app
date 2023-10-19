@@ -5,15 +5,19 @@ function CourseNavigation() {
   const { courseId } = useParams();
   const { pathname } = useLocation();
   return (
-    <div className="list-group" style={{ width: 150 }}>
+    <div style={{ width: 150 }}>
+      <ul className="list-group wd-course-navigator">
       {links.map((link, index) => (
-        <Link
-          key={index}
-          to={`/Kanbas/Courses/${courseId}/${link}`}
-          className={`list-group-item ${pathname.includes(link) && "active"}`}>
-          {link}
-        </Link>
+        <li>
+          <Link
+            key={index}
+            to={`/Kanbas/Courses/${courseId}/${link}`}
+            className={`list-group-item ${pathname.includes(link) && "active"}`}>
+            {link}
+          </Link>
+        </li>
       ))}
+      </ul>
     </div>
   );
 }

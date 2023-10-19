@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import db from "../Database";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Green from "../../Green.jpg";
+import './index.css';
 function Dashboard() {
   const courses = db.courses;
   return (

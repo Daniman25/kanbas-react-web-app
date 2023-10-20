@@ -1,0 +1,7 @@
+.wd-modules li{
+    list-style-type: none
+}
+.wd-modules a{
+    text-decoration: none;
+    color: red;
+}

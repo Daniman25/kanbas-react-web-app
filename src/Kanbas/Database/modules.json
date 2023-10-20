@@ -8,6 +8,43 @@
         "course" : "RS101",
         "name": "Week 2",
         "description": "Build a Rocket From Scratch"
+    },
+    { 
+        "course" : "RS101",
+        "name": "Week 3",
+        "description": "First Test Flight"
+    },
+    { 
+        "course" : "RS102",
+        "name": "Week 1",
+        "description": "Paper Airplanes"
+    },
+    { 
+        "course" : "RS102",
+        "name": "Week 2",
+        "description": "Metal Airplanes"
+    }, 
+    { 
+        "course" : "RS102",
+        "name": "Week 3",
+        "description": "Test Flight Around The Globe"
+    },
+    { 
+        "course" : "RS103",
+        "name": "Week 1",
+        "description": "Studying the Luna 1"
+    },
+    { 
+        "course" : "RS103",
+        "name": "Week 2",
+        "description": "Making Model Spacecraft"
+    }, 
+    { 
+        "course" : "RS103",
+        "name": "Week 3",
+        "description": "How to Fly Rockets"
     }
+
+    
 ]
     

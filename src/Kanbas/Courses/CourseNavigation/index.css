@@ -17,10 +17,11 @@
     color: red;
 }
 
-.wd-course-navigator li :active{
+.wd-course-navigator li .active{
     color: black;
-    border-left: solid black;
     padding-left: 8px;
+    border-color: white;
+    border-left: solid black;
     background-color: white;
 }
 

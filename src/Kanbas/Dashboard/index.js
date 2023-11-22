@@ -1,48 +1,53 @@
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import db from "../Database";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Green from "../../Green.jpg";
-import './index.css';
-function Dashboard() {
-  const courses = db.courses;
+function Dashboard({ courses, course, setCourse, addCourse,
+  deleteCourse, updateCourse }) {
   return (
     <div>
       <h1>Dashboard</h1>
-      <div class="d-flex flex-row flex-wrap">
+      <h5>Course</h5>
+      <input value={course.name} className="form-control"
+             onChange={(e) => setCourse({ ...course, name: e.target.value }) } />
+      <button onClick={addCourse} >
+        Add
+      </button>
+      
+      <button onClick={updateCourse} >
+        Update
+      </button>
 
+      <h1> Course List </h1>
+
+
+      <div className="list-group">
         {courses.map((course) => (
-          <div class="card" style={{"width": "260px"}}>
-            <img src={Green} class="card-img-top" alt="..."></img>
-            <div className="card-body">
-              <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="list-group-item">
-                {course.number} {course.name}
-              </Link>
-            </div>
-          </div>
-          ))}
+          <Link key={course._id}
+                to={`/Kanbas/Courses/${course._id}`}
+                className="list-group-item">
+
+            {course.name}
+            
+            <button
+              onClick={(event) => {
+                event.preventDefault();
+                setCourse(course);
+              }}>
+              Edit
+            </button>
+
+            <button
+              onClick={(event) => {
+                event.preventDefault();
+                deleteCourse(course._id);
+              }}>
+              Delete
+            </button>
+          </Link>
+        ))}
       </div>
     </div>
   );
 }
+
 export default Dashboard;
-
-/*  Card template
-    <div class="card" style="width: 260px;">
-      <img src="Green.jpg"
-            class="card-img-top" alt="...">
-      <div class="card-body">
-          <h5 class="card-title">Algebra 1000</h5>
-          <p class="card-text">
-              Introduction to Algerba</p>
-      </div>
-  </div>
-*/
-
-/*
-        {courses.map((course) => (
-          <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="list-group-item">
-            {course.name}
-          </Link>
-        ))}
-*/
-
